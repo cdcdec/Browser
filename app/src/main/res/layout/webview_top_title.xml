@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:background="#0000bb"
+       android:layout_height="40dp">
+    <TextView
+        android:id="@+id/txtRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:drawableLeft="@drawable/icon_scan"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/edtTitle"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+       <EditText
+           android:id="@id/edtTitle"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginRight="50dp"
+           android:text="@string/app_name"
+           android:background="@drawable/webview_url_edittext_bg"
+           android:textColor="#000000"
+           android:inputType="text"
+           android:focusable="false"
+           android:maxLines="1"
+           android:scrollHorizontally="true"
+           android:layout_centerVertical="true"
+           android:gravity="center_vertical|center_horizontal"
+           />
+
+   </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:progress="60"/>
+
+</LinearLayout>

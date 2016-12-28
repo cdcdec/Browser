@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    repositories{
+        flatDir{
+            dirs 'libs'
+        }
+    }
+    defaultConfig {
+        applicationId "com.cdc.browser"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name:'support-v4-24.1.0', ext:'aar')
+    compile(name:'support-v13-24.2.1', ext:'aar')
+    compile(name:'appcompat-v7-24.2.1', ext:'aar')
+    compile(name:'recyclerview-v7-24.2.1', ext:'aar')
+    compile(name:'core-0.9.1.0',ext:'aar')
+    compile(name:'me.zhanghai.android.materialprogressbar-1.3.0',ext:'aar')
+    compile(name:'bga-qrcodecore-1.1.6',ext:'aar')
+    compile(name:'bga-zxing-1.1.6',ext:'aar')
+}

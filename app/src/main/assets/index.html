@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>rem布局</title>
+    <!-- 阿里高清方案 -->
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="box">
+    <div  style="font-size:0.28rem;padding:0.2rem">
+        <img src="image/Nosebg.jpg" class="img-responsive">
+        <p align="center">1280x720</p>
+        <img src="image/1024_5.jpg" class="img-responsive">
+        <p align="center">259x194</p>
+        <img src="image/Ice-Age-Continental-Drift_1920x1080.jpg" class="img-responsive">
+        <p align="center">1920x1080</p>
+        <input type="file"  style="display:block;width:100%;height:0.7rem;padding:0.2rem;background:#ff0000;font-size:0.3rem;"/>
+        <br/>
+    </div>
+	 <ul style="font-size:0.3rem; padding: 0.2rem">
+        <li style="font-size:0.4rem"><a href="tv_video.html">TV  video测试</a></li>
+    </ul>
+
+    <ul style="font-size:0.3rem; padding: 0.2rem">
+        <li style="font-size:0.4rem"><a href="http://www.jianshu.com/p/985d26b40199">rem布局（进阶版）的一些说明</a></li>
+        <li>1.不管设计图多宽(当然，一般宽度为750，640也可以)，最外层的div宽度设为100%就行.</li>
+        <li>2.在该方案下，所有设备显示的文本大小都是一致的，结果当然就是屏幕越大看的越多了。</li>
+        <li>3.在该方案下,不论效果图是750,还是640,布局直接按照效果图的尺寸(px)直接除以100得到rem的值就可以了.</li>
+        <li>4.一般来说我们的手机端效果图是640px或750px。</li>
+        <li>5.于上图这类需要等屏宽的图片，只需让其宽度设为 100% 即可。</li>
+        <li>6.该布局方案要求凡是涉及尺寸的，单位都是rem，比如，height width margin paddint top border-radius 等等。你只需要按照效果图上标注的尺寸布局即可。</li>
+    </ul>
+</div>
+</body>
+</html>
